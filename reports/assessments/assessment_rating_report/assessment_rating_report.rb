@@ -5,8 +5,8 @@ class AssessmentRatingReport < AbstractReport
 
   register_report({
                     :params => [['scope_by_date', 'Boolean', 'Scope records by a date range'],
-                                ["from", Date, "The start of report range"],
-                                ["to", Date, "The start of report range"],
+                                ["from", 'Date', "The start of report range"],
+                                ["to", 'Date', "The start of report range"],
                                 ["rating", "Rating", "The assessment rating to report on"],
                                 ["values", "RatingValues", "The assessment rating values to include"]]
                   })

@@ -1,7 +1,7 @@
 class CreatedAccessionsReport < AbstractReport
   register_report(
-    params: [['from', Date, 'The start of report range'],
-             ['to', Date, 'The start of report range']]
+    params: [['from', 'Date', 'The start of report range'],
+             ['to', 'Date', 'The start of report range']]
   )
 
   def initialize(params, job, db)
