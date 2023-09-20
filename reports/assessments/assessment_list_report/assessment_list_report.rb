@@ -7,8 +7,8 @@ class AssessmentListReport < AbstractReport
 
   register_report(
     params: [['scope_by_date', 'Boolean', 'Scope records by a date range'],
-             ['from', Date, 'The start of report range'],
-             ['to', Date, 'The start of report range']]
+             ['from', 'Date', 'The start of report range'],
+             ['to', 'Date', 'The start of report range']]
   )
 
   def initialize(params, job, db)
